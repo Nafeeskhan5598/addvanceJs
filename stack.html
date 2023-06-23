@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- --------------------------------------Stack ----------------------------
+    <script>
+
+        var globalEC = "added";
+
+        function a(){
+            var fa = "2nd function o/p1";
+            console.log(fa);
+            debugger;
+            b();
+            console.log("let's see when i will be on console."); }
+
+            function b(){
+                 debugger;
+                 console.log("2nd function 0/p2");
+                 c(); }
+                 function c(){
+                    debugger;
+                    console.log("3rd function 0/p3"); }
+                 debugger;
+                 a();
+            
+        
+    </script> -->
+        <!-- --------------------------------------Function Hosting (Brouser) ----------------------------
+
+    <script>
+          sum(5,5);
+        function  sum(a, b){
+            add = a+b;
+            console.log(add);
+        }
+      
+    </script> -->
+
+     <!-- - --------------------------------------Hosting (user) ^ ---------------------------- -
+
+    <script>
+        function  sum(a, b){
+            add = a+b;
+            console.log(add);
+        }
+        sum(5,5);
+    </script> -->
+
+ <!-- --------------------------------------Function Hosting (Brouser) ---------------------------- -->
+   <!-- <script>
+
+  var a = 10;
+    console.log(a);
+    var a = 20;
+
+   
+</script> -->
+ <!-- --------------------------------------Variable Hosting (Brouser) ---------------------------- -->
+ 
+ <!-- <script>
+
+  var a = undefined;
+    console.log(a);
+    a = 20;   
+</script>  -->
+ <!-- --------------------------------------Variable Hosting (Brouser) ---------------------------- -->
+<!-- <script>
+    console.log(a);
+    var a = 10;
+</script> -->
+ <!-- --------------------------------------Variable Hosting (practice) ---------------------------- -->
+<!-- <script>
+    console.log("i am a" + job);
+    var job = "web developer";
+    console.log("i am a" + job);
+
+    function whoAmI(){
+        console.log("i am a" + job);
+        var job = "full stack";
+        console.log("i am a" + job);
+
+    }
+    whoAmI(); -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+
+ <!-- <script>
+    "use strict"
+     function sum(a,b){
+        add = a+b;
+        console.log(add);
+
+     }
+     sum(10,10)
+ </script> -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<!-- <script> 
+const khan = {name : "nafees khan",
+qoulif: "BCA",
+ sum: function(){
+    console.log(this.name);
+    var add = 2+2;
+    // console.log("sum of the to is" + add);
+    console.log(this);
+ }
+}
+khan.sum();
+</script> -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<!-- <script>
+
+// const object = {
+//     message: 'Hello, World!',
+  
+//     getMessage () {
+//       const message = 'Hello, Earth!';
+//       return this.message;
+//     }
+//   };
+  
+//   console.log(object.getMessage());
+ // </script> 
+//  --------------------------------------Strict (practice) ---------------------------- -->
+
+<!-- // function Pet(name) {
+//   this.name = name;
+
+//   this.getName = () => this.name;
+// }
+
+// const cat = new Pet('Fluffy');
+
+// console.log(cat.getName()); // What is logged?
+
+// const { getName } = cat;
+// console.log(getName());  -->
+
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<script>
+const object = {
+  message: 'Hello, World!',
+
+  logMessage() {
+    console.log(this.message); // What is logged?
+  }
+};
+
+setTimeout(object.logMessage, 1000);
+</script>
+</body>
+</html>

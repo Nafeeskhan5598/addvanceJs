@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- --------------------------------------Stack ----------------------------
+    <script>
+
+        var globalEC = "added";
+
+        function a(){
+            var fa = "2nd function o/p1";
+            console.log(fa);
+            debugger;
+            b();
+            console.log("let's see when i will be on console."); }
+
+            function b(){
+                 debugger;
+                 console.log("2nd function 0/p2");
+                 c(); }
+                 function c(){
+                    debugger;
+                    console.log("3rd function 0/p3"); }
+                 debugger;
+                 a();
+            
+        
+    </script> -->
+        <!-- --------------------------------------Function Hosting (Brouser) ----------------------------
+
+    <script>
+          sum(5,5);
+        function  sum(a, b){
+            add = a+b;
+            console.log(add);
+        }
+      
+    </script> -->
+
+     <!-- - --------------------------------------Hosting (user) ^ ---------------------------- -
+
+    <script>
+        function  sum(a, b){
+            add = a+b;
+            console.log(add);
+        }
+        sum(5,5);
+    </script> -->
+
+ <!-- --------------------------------------Function Hosting (Brouser) ---------------------------- -->
+   <!-- <script>
+
+  var a = 10;
+    console.log(a);
+    var a = 20;
+
+   
+</script> -->
+ <!-- --------------------------------------Variable Hosting (Brouser) ---------------------------- -->
+ 
+ <!-- <script>
+
+  var a = undefined;
+    console.log(a);
+    a = 20;   
+</script>  -->
+ <!-- --------------------------------------Variable Hosting (Brouser) ---------------------------- -->
+<!-- <script>
+    console.log(a);
+    var a = 10;
+</script> -->
+ <!-- --------------------------------------Variable Hosting (practice) ---------------------------- -->
+<!-- <script>
+    console.log("i am a" + job);
+    var job = "web developer";
+    console.log("i am a" + job);
+
+    function whoAmI(){
+        console.log("i am a" + job);
+        var job = "full stack";
+        console.log("i am a" + job);
+
+    }
+    whoAmI(); -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+
+ <!-- <script>
+    "use strict"
+     function sum(a,b){
+        add = a+b;
+        console.log(add);
+
+     }
+     sum(10,10)
+ </script> -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<!-- <script> 
+const khan = {name : "nafees khan",
+qoulif: "BCA",
+ sum: function(){
+    console.log(this.name);
+    var add = 2+2;
+    // console.log("sum of the to is" + add);
+    console.log(this);
+ }
+}
+khan.sum();
+</script> -->
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<!-- <script>
+
+// const object = {
+//     message: 'Hello, World!',
+  
+//     getMessage () {
+//       const message = 'Hello, Earth!';
+//       return this.message;
+//     }
+//   };
+  
+//   console.log(object.getMessage());
+ // </script> 
+//  --------------------------------------this (practice) ---------------------------- -->
+
+<!-- // function Pet(name) {
+//   this.name = name;
+
+//   this.getName = () => this.name;
+// }
+
+// const cat = new Pet('Fluffy');
+
+// console.log(cat.getName()); // What is logged?
+
+// const { getName } = cat;
+// console.log(getName());  -->
+
+ <!-- --------------------------------------Strict (practice) ---------------------------- -->
+<!-- <script>
+const object = {
+  message: 'Hello, World!',
+
+  logMessage() {
+    console.log(this.message); // What is logged?
+  }
+};
+
+setTimeout(object.logMessage, 1000);
+</script> -->
+ <!-- --------------------------------------Array is Object prove it (practice) ---------------------------- -->
+
+<!-- <script>
+    const array = [1, 2, 3];
+    console.log(array);
+    const arrayobj = {
+        0:1,
+        1:2,
+        2:3
+    }
+    console.log(arrayobj);
+    console.log(typeof(array));
+    console.log(Array.isArray(array));
+</script> -->
+ <!-- --------------------------------------pass by refrance  & pass by value (practice) ---------------------------- -->
+<!-- <script>
+ const obj1 = {
+    user: "nafees",
+    pass: "password"
+}
+const obj2 = obj1;
+obj2.pass = "kuchbhi"
+ 
+console.log(obj1);
+console.log(obj2);
+</script> -->
+ <!-- --------------------------------------pass by refrance  & pass by value (practice) ---------------------------- -->
+<!-- <script>
+    const arr1 = [1, 2, 3, 4];
+    const arr2 = arr1;
+    arr2.push(5);
+    console.log(arr1);
+    console.log(arr2);
+</script> -->
+ <!-- --------------------------------------pass by refrance  & pass by value (practice) ---------------------------- -->
+<!-- <script>
+    let likes = 100;
+
+    const youtube = {
+        name: "hell",
+        subscriber: 1000
+    }
+    const name = (a, b) => {
+        a = 200;
+
+        b.subscriber = 10000;
+
+    }
+    name(likes, youtube);
+    console.log(likes);
+    console.log(youtube.subscriber);
+</script> -->
+<!-- ------------------------------------------------------------------arrow Function------------------------------------ -->
+<!-- <script> -->
+    <!-- // const sayHello = (name, greeting) =>  console.log(greeting + " " + name)
+
+    // // sayHello("nafees", "Good Afternoon")
+
+    // const x = {
+    //     name : "nafees",
+    //     age : 24,
+    //     exp : 5,
+
+    //     show  : function() {
+    //         setTimeout(( ) => {
+    //             console.log(`The name is ${this.name},  my experience is ${this.exp}`)
+    //         }, 2000)
+               
+    //     }
+    // }
+    // x.show()
+   
+// ---------------------------------------------
+//  console.log("4" + 5 * 5);
+
+//  pick the correct output  1."455"    2.425  3."4"25  4.
+
+//  let [a, , ...b] = [1,2,3,4]
+//  console.log(b)
+</script> -->
+<!-- -------------------------------------------------------------------Object Destructuring---------------------------------------
+<script>
+    const hello = {
+        name : "nafees",
+        age : 24,
+        deg : "BCA",
+
+        hobb : {
+            first : "playing carrom board",
+            sec : "Riding"
+        }
+
+    }
+    let {name:myname, age:myage, deg, hobb} = hello;
+    console.log(`my name is ${myname}, \n my age is ${myage}, \n my deg is ${deg}  \n my hobbies is ${hobb.first}`)
+</script> -->   
+<!-- -------------------------------------------------------------------Array Destructuring--------------------------------------- -->
+<!-- <script>
+const languages = ["javascript", "python", "java", "C"]
+
+let [top1, top2, top3, top4]  = languages;
+console.log(top1)
+
+console.log(`my favarite language is ${top1}, \n my future language is ${top2}, \n my past language is ${top4}`)
+</script> -->
+
+<!-- ------------------------------------------------------------------------------Spread Operator-------------------------------------------- -->
+<!-- <script>
+    const name = [
+        {name: "nfees", lname: "khan", qou: "BCA"}
+    ]
+
+    const data = [
+        { age:  24, liveing: "Rajsthan", ...name}
+    ]
+     const student = ["infograins", "software", "company" ]
+
+     const fullInfo = [...name, ...data, ...student]
+
+    console.log(fullInfo);
+</script> -->
+<!-- --------------------------------------------------------------REVERS ORDER 1 TO 5 ------------------- -->
+<!-- <script> 
+for(let i = 5; i >= 1; i--){
+
+    console.log(i)
+} -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- <h3>Select your favorite color:</h3>
+  <input type="radio" name="color" value="red"> Red<br>
+  <input type="radio" name="color" value="green"> Green<br>
+  <input type="radio" name="color" value="blue"> Blue<br>
+  <input type="radio" name="color" value="yellow"> Yellow<br>
+<script>
+
+const colorRadios = document.querySelectorAll('input[type="radio"][name="color"]');
+  
+  // Add event listener to each radio button
+  colorRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      // Get the selected value
+      const selectedValue = document.querySelector('input[type="radio"][name="color"]:checked').value;
+
+      // Display the selected value
+      console.log('Selected color:', selectedValue);
+    });
+  });
+</script>
+
+
+</script> -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- <script>
+    let arr = [5,1,6,4,5,6,3,2,1,6,5,5,];
+     let hello = [...new Set(arr)];
+
+     console.log(hello)
+</script> -->
+<!-- ----------------------------------------------------------------------- -->
+<script>
+// const array = [1, 2, 3, 3, 4, 5, 5];
+// const uniqueArray = array.reduce((accumulator, currentValue) => {
+//   if (!accumulator.includes(currentValue)) {
+//     accumulator.push(currentValue);
+//   }
+//   return accumulator;
+// }, []);
+// console.log(uniqueArray);
+
+
+
+// can someone explain with the correct answer
+
+
+
+
+// ---------------------------------------------------------------
+// var x=12;
+// var y=8;
+// var res=eval("x+y");
+// document.write(res);
+
+
+// console.log("5" - 3 + 5)
+
+
+let promise = new Promise(function(resolve, reject){
+    alert("hello")
+     resolve(56)
+})
+console.log("my name is")
+
+setTimeout(function(){
+    console.log("nafees")
+},2000)
+
+
+
+
+
+
+</script>
+</body>
+</html>
